@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "wisata",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "nama": "Curug Cibareubeuy", "kec": "Ciater", "transport": null, "koor_X": -6.32342, "koor_Y": null, "tiket": 10000, "kode": 1 }, "geometry": { "type": "Point", "coordinates": [ 107.664988698977439, -6.763041495111299 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Air Panas SagalaHerang", "kec": "Sagalaherang", "transport": null, "koor_X": null, "koor_Y": null, "tiket": 15000, "kode": 2 }, "geometry": { "type": "Point", "coordinates": [ 107.669577118641598, -6.641902991743763 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Mata Air Cileuleuy", "kec": "Jalancagak", "transport": null, "koor_X": null, "koor_Y": null, "tiket": null, "kode": 3 }, "geometry": { "type": "Point", "coordinates": [ 107.690933071890285, -6.672870477580429 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Pantai Pondok Bali", "kec": "Legonkulon", "transport": null, "koor_X": null, "koor_Y": null, "tiket": null, "kode": 4 }, "geometry": { "type": "Point", "coordinates": [ 107.777267179908137, -6.206831721264064 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Curug Cina", "kec": "Sagalaherang", "transport": null, "koor_X": null, "koor_Y": null, "tiket": null, "kode": 5 }, "geometry": { "type": "Point", "coordinates": [ 107.689317897642937, -6.628506255474344 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Mata Air Tajaherang", "kec": "Jalancagak", "transport": null, "koor_X": null, "koor_Y": null, "tiket": null, "kode": 6 }, "geometry": { "type": "Point", "coordinates": [ 107.672403613344301, -6.663787093383609 ] } }
+]
+}

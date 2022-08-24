@@ -1,0 +1,28 @@
+{
+"type": "FeatureCollection",
+"name": "keamanan",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Legonkulon" }, "geometry": { "type": "Point", "coordinates": [ 107.812626276647208, -6.259795521570418 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Pamanukan" }, "geometry": { "type": "Point", "coordinates": [ 107.819174084079222, -6.283443852930613 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Pusakanagara" }, "geometry": { "type": "Point", "coordinates": [ 107.875935137067231, -6.284637475348648 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Binong" }, "geometry": { "type": "Point", "coordinates": [ 107.795242287018695, -6.404812607268715 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Cikaum" }, "geometry": { "type": "Point", "coordinates": [ 107.745946055759291, -6.416963166187911 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Compreng" }, "geometry": { "type": "Point", "coordinates": [ 107.878502457497362, -6.370480895418138 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Pagaden" }, "geometry": { "type": "Point", "coordinates": [ 107.812484887080259, -6.458086277443837 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Cibogo" }, "geometry": { "type": "Point", "coordinates": [ 107.848081953406037, -6.568099099882675 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Subang" }, "geometry": { "type": "Point", "coordinates": [ 107.767820589814662, -6.550984536958947 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Subang Kota" }, "geometry": { "type": "Point", "coordinates": [ 107.763806100785814, -6.557897503070068 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Kalijati" }, "geometry": { "type": "Point", "coordinates": [ 107.688053524616691, -6.526712377225008 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Cipendeuy" }, "geometry": { "type": "Point", "coordinates": [ 107.570361883749015, -6.503043011096167 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Cijambe" }, "geometry": { "type": "Point", "coordinates": [ 107.723750519802749, -6.643594675921794 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Jalancagak" }, "geometry": { "type": "Point", "coordinates": [ 107.688751748155312, -6.678224555215823 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Cisalak" }, "geometry": { "type": "Point", "coordinates": [ 107.771628154994005, -6.721592391793638 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Tanjungsiang" }, "geometry": { "type": "Point", "coordinates": [ 107.822859645989837, -6.755512119762757 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Sagalaherang" }, "geometry": { "type": "Point", "coordinates": [ 107.652505382295317, -6.673182776772447 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Pabuaran" }, "geometry": { "type": "Point", "coordinates": [ 107.586346839181502, -6.410045935149291 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Patokbeusi" }, "geometry": { "type": "Point", "coordinates": [ 107.585136687611453, -6.377205592413578 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Ciasem" }, "geometry": { "type": "Point", "coordinates": [ 107.655769235424188, -6.342605679202194 ] } },
+{ "type": "Feature", "properties": { "id": null, "nama": "Polsek Blanakan" }, "geometry": { "type": "Point", "coordinates": [ 107.662633617334521, -6.279289458516133 ] } }
+]
+}
