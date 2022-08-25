@@ -10,11 +10,33 @@ class Blog extends BaseController
         'title' => 'artikel'
     ];
         $model = new ModelsBlog();
+        $keyword = $this->request->getVar('keyword');
+
+        if ($keyword){
+            $query = $model->search($keyword);
+        } else {
+            $query = $model;
+        }
+        if (!$this->validate([]))
+        {
+            $data['validation'] = $this->validator;
+            $data['artikel'] = $query->paginate(6,'artikel');
+            $data['pager'] = $model->pager;
+            return view('view_list',$data);
+        }
+    }
+    
+
+    public function ubah()
+    {$data = [
+        'title' => 'Edit Artikel'
+    ];
+        $model = new ModelsBlog();
         if (!$this->validate([]))
         {
             $data['validation'] = $this->validator;
             $data['artikel'] = $model->getArtikel();
-            return view('view_list',$data);
+            return view('/admin/list',$data);
         }
     }
 

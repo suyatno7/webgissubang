@@ -42,6 +42,8 @@ $routes->get('/peta', 'Pages::peta');
 $routes->get('/filterpeta', 'Pages::filter');
 $routes->get('/rute', 'Pages::rute');
 
+$routes->get('/blog/form_edit/10', 'Blog::form_edit', ['filter' => 'role:admin']);
+$routes->get('/blog/form_edit/2', 'Blog::form_edit', ['filter' => 'role:admin']);
 /*
  * --------------------------------------------------------------------
  * Additional Routing

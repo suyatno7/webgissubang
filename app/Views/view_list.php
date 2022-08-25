@@ -1,57 +1,32 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 
-
-	<div class="row">
-        <div class="col-lg-12 mt-3">
-            <div class="ms-1">
-                <h2>CRUD BERITA ARTIKEL</h2>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-3 mt-4">
+            <form action="" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Cari Artikel Objek Wisata" name="keyword">
+                    <button class="btn btn-outline-secondary" type="submit" name="submit">Cari</button>
+                </div>
+            </form>
         </div>
     </div>
-    <hr>
-    <a href="/blog/form" class="btn btn-primary"><span class="fa fa-plus"></span> Input Artikel Baru</a>
-    <hr>
-            <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
-                <div class="alert alert-success">
-                    <?php echo session()->getFlashdata('berhasil');?>
+    <div class="row">
+        <?php foreach ($artikel as $post) : ?>
+            <div class="col-md-4 col-lg-4 mb-1 d-flex">
+                <div class="shadow p-2 mb-2 mt-2 rounded bg-white">
+                    <img class="card-img mb-2 lazyload rounded lazyload" src="/assets/blog/images/<?= $post['gambar']; ?>">
+                    <div class="card-body p-2">
+                        <h5 class="card-title h5"><?= $post['judul']; ?></h5>
+                        <p class="ql-align-justify"><?php echo html_entity_decode(substr($post['isi'], 0, 160) . '...'); ?></p>
+                        <p><a class="btn btn-success btn-sm" href="blog/view/<?= $post['id']; ?>">Read More</a></p>
+                    </div>
                 </div>
-            <?php } ?>
-            
-            <?php 
-                $errors = $validation->getErrors();
-                if(!empty($errors))
-                {
-                    echo $validation->listErrors();
-                }
-            ?>
-    <div class="row mx-auto">
-    	<div class="col-lg-12">
-    		<div class="row">
-                <table class="table table-bordered">
-                <tr>
-                    <th>No</th>
-                    <th>Judul</th>
-                    <th>Gambar</th>
-                    <th>Aksi</th>
-                </tr>
-                    <?php foreach($artikel as $row):?>
-                <tr>
-                    <td><?=$row['id'];?></td>
-                    <td><?=$row['judul'];?></td>
-                    <td><?php
-                        if (!empty($row["gambar"])) {
-                            echo '<img src="'.base_url("assets/blog/images/$row[gambar]").'" width="250">';
-                        }
-                    ?></td>
-                    <td><a href="blog/view/<?=$row['id'];?>" class="btn btn-success">View</a> | <a href="blog/form_edit/<?=$row['id'];?>" class="btn btn-primary">Edit</a> | <a href="blog/hapus/<?=$row['id'];?>" class="btn btn-danger">Hapus</a> </td>
-                </tr>
-                <?php endforeach;?>
-            </table>
-    		</div>
-    	</div>
+            </div>
+
+        <?php endforeach; ?>
     </div>
-    
-
-
+</div>
+<?= $pager->links('artikel', 'blogpage') ?>
 <?= $this->endSection(); ?>

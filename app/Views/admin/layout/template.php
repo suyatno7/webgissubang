@@ -107,9 +107,15 @@
                     <li class="nav-item">
                         <a href="/cari" class="nav-link m-2 menu-item"><i class="fa-solid fa-search"></i>Cari</a>
                     </li>
+                    <?php if (logged_in()) : ?>
                     <li class="nav-item">
-                        <a href="/blog/ubah" class="nav-link m-2 menu-item"><i class="fa-solid fa-search"></i>Login</a>
+                        <a href="/logout" class="nav-link m-2 menu-item"><i class="fa-solid fa-search"></i>Logout</a>
                     </li>
+                    <?Php else : ?>
+                        <li class="nav-item">
+                        <a href="/login" class="nav-link m-2 menu-item"><i class="fa-solid fa-search"></i>Login</a>
+                    </li>
+                    <?php endif;?>
                 </ul>
             </div>
         </div>
